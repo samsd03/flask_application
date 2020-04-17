@@ -1,0 +1,6 @@
+1. Install Python3 in your system .
+2. Install Rabbitmq Server in your system . 
+3. Install python packages using requirement.txt file . 
+4. Set your email-id and password in Environment Variable to send email.
+    keys to set in Environment Variables are user_email for email-id and email_password for password .
+5. The email-id should have enabled Less secure app access .

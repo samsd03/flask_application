@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "803c2435-a0cc-44d4-9af9-62616d0dc09d",
+		"name": "Send Email via Flask Application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"email\": \"dubeysachin03@gmail.com\",\n      \"body\": \"Hey this is working really great\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "test",
+							"value": "123",
+							"disabled": true
+						}
+					]
+				},
+				"description": "This is used to send email to specified email ."
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/?email=dubeysachin03@gmail.com&start_timestamp=2020-04-16 10:16:00&end_timestamp=2020-04-16 23:59:59&status=success",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/?email=dubeysachin03@gmail.com&start_timestamp=2020-04-16 10:16:00&end_timestamp=2020-04-16 23:59:59&status=success",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "dubeysachin03@gmail.com"
+						},
+						{
+							"key": "start_timestamp",
+							"value": "2020-04-16 10:16:00"
+						},
+						{
+							"key": "end_timestamp",
+							"value": "2020-04-16 23:59:59"
+						},
+						{
+							"key": "status",
+							"value": "success"
+						}
+					]
+				},
+				"description": "This is used to get information of sent email . You can get data by using diffrent filter such as email,start_timestamp,end_timestamp,status . "
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
