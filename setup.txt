@@ -4,3 +4,4 @@
 4. Set your email-id and password in Environment Variable to send email.
     keys to set in Environment Variables are user_email for email-id and email_password for password .
 5. The email-id should have enabled Less secure app access .
+6. Run celery when running project is running .
