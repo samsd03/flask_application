@@ -1,0 +1,28 @@
+# Python-specific
+*.pyc
+__pycache__/
+
+# Flask specific
+instance/
+.env
+
+# IDE/Editor specific
+.vscode/
+.idea/
+
+# System/OS specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dependency directories
+venv/
+env/
+
+# SQLite database
+*.sqlite3
+
+# Ignore configuration files if needed
+config.ini
